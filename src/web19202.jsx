@@ -181,7 +181,7 @@ class Web19202 extends React.Component {
           data-layer="4c51aca1-96e8-47c8-a070-c0e7e65213e9"
           className="inDrieStappenDePerfecteOpdrachtVoorJou"
         >
-          In drie stappen de perfecte <br />
+          In driehonderd stappen de perfecte <br/>
           opdracht voor jou
         </div>
         <div
@@ -314,15 +314,12 @@ class Web19202 extends React.Component {
           className="stap3wijLatenJouDeBesteOpdrachtenZien"
         >
           Stap 3:
-          <br />
-          Wij laten jou de beste opdrachten zien!
+          Wij laten jou de beste <br /> opdrachten zien!
         </div>
         <div
           data-layer="32b689bd-df7d-4d46-9b8a-00794b750f14"
           className="stap3wijLatenJouDeBesteOpdrachtenZien"
         >
-          <br />
-          Hallo, dit is een test
         </div>
       </div>
     );

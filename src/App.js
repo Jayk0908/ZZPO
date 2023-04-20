@@ -317,7 +317,7 @@ export class Web19202 extends LitElement {
     
     return html`
     <style>
-      ${Web19202Style}
+      
     </style>
     <div data-layer="740efed3-0a21-4c8f-b406-4bf5c50a655d" class="web19202">        <svg data-layer="fcb82f8d-0728-4d3a-bf2a-0f681787cd94" preserveAspectRatio="none" viewBox="0 0 1920 930" class="path1"><defs><pattern id="img-path1" patternContentUnits="userSpaceOnUse" width="100%" height="100%"><image xlink:href="assets/path1.png" x="0" y="0" width="1920.00px" height="930.00px" /></pattern></defs><path d="M 0 0 L 1920 0 L 1920 930 L 1516.435424804688 930 L 449.67431640625 930 L 0 930 L 0 0 Z" fill="url(#img-path1)" /></svg>
         <div data-layer="ad386345-1704-4a2e-871f-c7f46b9c912a" class="stap1maakJeAccountAan">Stap 1:<br />Maak je account aan</div>
