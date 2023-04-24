@@ -7,10 +7,30 @@ import Bubble2 from './images/ellipse5.png'
 import Bubble3 from './images/ellipse6.png'
 import Logo from './images/logo_transparent.png'
 import './App.css';
+import CookieConsent from 'react-cookie-consent';
+
+window.addEventListener("resize", function() {
+  var container = document.getElementById("animation-container");
+  if (container) {
+    var windowWidth = window.innerWidth;
+    var containerWidth = windowWidth * 0.5; // Change this value as needed
+    container.style.width = containerWidth + "px";
+  }
+});
 
 function App() {
   return (
     <div className="App">
+      <div className='cookie-consent'>
+    <CookieConsent
+        location="bottom"
+        buttonText="Ik ga akkoord"
+        cookieName="cookie-consent"
+      >
+        Wij gebruiken cookies om de website te verbeteren.{" "}
+        <a href="/privacybeleid">Meer informatie</a>
+      </CookieConsent>
+      </div>
       <div className='Hero-sector'>
         <div className='Hero-image'>
           <img src={Background} alt='background' /> {/* Updated */}
@@ -49,21 +69,21 @@ function App() {
         </div>
         <div className='lottie-ani-1' >
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_AmDz0QET05.json"  background="transparent"  speed="1.2"  style={{width: '600px', height: '600px'}}  loop  autoplay></lottie-player>
+        <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_AmDz0QET05.json"  background="transparent"  speed="1.2"  loop  autoplay></lottie-player>
         </div>
         <div className='stap-1'>
           <h2>Stap 1: <br/>Maak je account aan</h2>
         </div>
         <div className='lottie-ani-2' >
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_zfszhesy.json"  background="transparent"  speed="1"  style={{width:'400px', height: '400px'}}  loop  autoplay></lottie-player>
+        <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_zfszhesy.json"  background="transparent"  speed="1"  loop  autoplay></lottie-player>
         </div>
         <div className='stap-2'>
           <h2>Stap 2: <br/>Vul je profiel in</h2>
         </div>
         <div className='lottie-ani-3' >
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_mf5j5kua.json"  background="transparent"  speed="1"  style={{width:"500px", height:"500px"}}  loop  autoplay></lottie-player>
+        <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_mf5j5kua.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
         </div>
         <div className='stap-3'>
           <h2>Stap 3: <br/>Wij laten jou de beste <br/> opdrachten zien!</h2>
