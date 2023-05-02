@@ -8,6 +8,7 @@ import Bubble3 from './images/ellipse6.png'
 import Logo from './images/logo_transparent.png'
 import './App.css';
 import CookieConsent from 'react-cookie-consent';
+import { Outlet, Link } from "react-router-dom";
 
 window.addEventListener("resize", function() {
   var container = document.getElementById("animation-container");
@@ -21,6 +22,19 @@ window.addEventListener("resize", function() {
 function App() {
   return (
     <div className="App">
+        <nav>
+        <ul>
+          <li className="nav-item-1">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="nav-item-2">
+            <Link to="/Bedrijven">Bedrijven</Link>
+          </li>
+        </ul>
+      </nav>
+
+      <Outlet />
+
       <div className='cookie-consent'>
     <CookieConsent
         location="bottom"

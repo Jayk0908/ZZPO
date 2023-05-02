@@ -1,6 +1,7 @@
 {
   "projects": {
-    " development": "test-5807b"
+    " development": "test-5807b",
+    "default": "test-5807b"
   },
   "targets": {},
   "etags": {}
