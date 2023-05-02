@@ -1,3 +1,4 @@
+import $ from "jquery";
 import Button from './button';
 import Background from './images/path1.png';
 import HeroPicture from './images/favpngvectorGraphicsStockIllustrationSelfEmploymentStockPhotography.png'
@@ -9,6 +10,7 @@ import Logo from './images/logo_transparent.png'
 import './App.css';
 import CookieConsent from 'react-cookie-consent';
 import { Outlet, Link } from "react-router-dom";
+import { FacebookIcon, InstagramIcon, LinkedInIcon } from './socials';
 
 window.addEventListener("resize", function() {
   var container = document.getElementById("animation-container");
@@ -20,6 +22,14 @@ window.addEventListener("resize", function() {
 });
 
 function App() {
+  $(document).ready(function() {
+    $('.nav-item-1, .nav-item-2').on('click', function() {
+      // remove active class from all nav items
+      $('.nav-item-1, .nav-item-2').removeClass('active');
+      // add active class to clicked nav item
+      $(this).addClass('active');
+    });
+  });
   return (
     <div className="App">
         <nav>
@@ -102,6 +112,15 @@ function App() {
         <div className='stap-3'>
           <h2>Stap 3: <br/>Wij laten jou de beste <br/> opdrachten zien!</h2>
         </div>
+        </div>
+        <div className="facebook-button">
+          <FacebookIcon/>
+        </div>
+        <div className="instagram-button">
+          <InstagramIcon/>
+        </div>
+        <div className="linkedIn-button">
+          <LinkedInIcon/>
       </div>
     </div>
   );

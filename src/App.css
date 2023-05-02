@@ -7,14 +7,14 @@
 @media (max-width: 768px) {
 
   .App {
-    height: 2800px;
+    height: 3000px;
     position: relative;
     flex-direction: column;
   }
 
   .Hero-sector {
     position: relative;
-    height: 700px;
+    height: 750px;
     overflow: hidden;
   }
 
@@ -28,12 +28,60 @@
 
   .main-logo {
     position: absolute;
-    top: 12.5%;
+    top: 20%;
     left: 40%; 
     width: 70%;
     max-width: 300px;
     transform: translate(-50%,-50%);
     z-index: 3;
+  }
+
+  .nav-item-1{
+    position: absolute;
+    top: 1.5%;
+    left: 37.5%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    width: auto;
+    height: auto;
+    z-index: 4;
+    text-align: left;
+    list-style-type: none;
+  }
+  
+  .nav-item-1 li{
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
+  .nav-item-1 a {
+    color: #fff;
+    font: normal normal 700 6vw/6vh Lato;
+    text-decoration: none;
+  }
+  
+  .nav-item-2{
+    position: absolute;
+    top: 1.5%;
+    left: 67.5%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    width: auto;
+    height: auto;
+    z-index: 4;
+    text-align: left; 
+    list-style-type: none;
+  }
+  
+  .nav-item-2 li{
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
+  .nav-item-2 a {
+    color: #fff;
+    font: normal normal 700 6vw/6vh Lato;
+    text-decoration: none;
   }
 
   .bubble-1 {
@@ -62,7 +110,7 @@
 
   .text-container{
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 10%;
     width: 80%;
     max-width: 550px;
@@ -74,7 +122,7 @@
 
   .secondary-text-container {
     position: absolute;
-    top: 43%;
+    top: 50%;
     left: 29.5%;
     transform: translate(-22.5%);
     max-width: 80%;
@@ -87,7 +135,7 @@
 
   .Button-container {
     position: absolute;
-    top: 77.5%;
+    top: 85%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
@@ -248,6 +296,57 @@
     color: #15616D;
     font: normal normal 900 25px/60px Lato;
   }
+
+  
+.facebook-button {
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 80px;
+  justify-content: center;
+  left: 38%;
+  padding: 8px;
+  position: absolute;
+  top: 94%;
+  transition: background-color .3s ease;
+}
+
+.linkedIn-button {
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 80px;
+  justify-content: center;
+  left: 63%;
+  padding: 8px;
+  position: absolute;
+  top: 94%;
+  transition: background-color .3s ease;
+}
+
+.instagram-button {
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 80px;
+  justify-content: center;
+  left: 12%;
+  padding: 8px;
+  position: absolute;
+  top: 94%;
+  transition: background-color .3s ease;
+  color: #15616D;
+}
+
+.linkedIn-button svg {
+  color: #15616d;
+}
+.facebook-button svg {
+  color: #15616d;
+}
+.instagram-button svg {
+  color: #15616d;
+}
 
 }
 
@@ -596,5 +695,58 @@
   color: #15616D;
   font: normal normal 900 1.7vw/4vw Lato;
 }
+
+.facebook-button {
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 80px;
+  justify-content: center;
+  left: 46%;
+  padding: 8px;
+  position: absolute;
+  top: 94%;
+  transition: background-color .3s ease;
+}
+
+.linkedIn-button {
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 80px;
+  justify-content: center;
+  left: 52%;
+  padding: 8px;
+  position: absolute;
+  top: 94%;
+  transition: background-color .3s ease;
+}
+
+.instagram-button {
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 80px;
+  justify-content: center;
+  left: 40%;
+  padding: 8px;
+  position: absolute;
+  top: 94%;
+  transition: background-color .3s ease;
+  color: #15616D;
+}
+
+.linkedIn-button svg {
+  color: #15616d;
+}
+.facebook-button svg {
+  color: #15616d;
+}
+.instagram-button svg {
+  color: #15616d;
+}
+
+
+
 
 }
