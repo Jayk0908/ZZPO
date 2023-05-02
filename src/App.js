@@ -34,9 +34,6 @@ function App() {
     <div className="App">
         <nav>
         <ul>
-          <li className="nav-item-1">
-            <Link to="/">Home</Link>
-          </li>
           <li className="nav-item-2">
             <Link to="/Bedrijven">Bedrijven</Link>
           </li>
